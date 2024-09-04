@@ -1,0 +1,88 @@
+
+/* Normalize.css ou Reset.css */
+/* @import url('https://unpkg.com/normalize.css'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+  
+/* Variáveis */
+:root {
+  --font-family: Arial, sans-serif;
+}
+
+/* Estilos básicos */
+body {
+  font-family: var(--font-family);
+  color: var(--primary-color);
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  font-family: "Sevillana", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 150px;
+}
+
+.sevillana-regular {
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/./image/plano-de-fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    /* background-color: #f0f0f0; */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+.search-bar {
+    width: 600px; /* Ajuste o tamanho conforme necessário */
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right:3px;
+}
+
+.pesquisar {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Cor verde */
+    color: white;
+    border: none;
+    height: 39px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    /* background-color: #f0f0f0; */
+    padding: 20px;
+    text-align: center;
+    margin-top: 200px;
+}
