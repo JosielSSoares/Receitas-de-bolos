@@ -1,4 +1,4 @@
-let dados = [
+export const dados = [
     // ... suas receitas anteriores
     {
       nome: "Bolo de Chocolate Simples",
@@ -106,3 +106,4 @@ let dados = [
       }
     // ... outras receitas
   ];
+  

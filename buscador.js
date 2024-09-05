@@ -1,5 +1,5 @@
 // buscador.js
-import dados from './base-de-receitas.js'; // Importa o array de receitas
+import {dados} from './dados.js'; // Importa o array de receitas
 
 const searchBar = document.querySelector('.search-bar');
 const searchButton = document.querySelector('.pesquisar');
