@@ -96,3 +96,24 @@ footer {
     padding: 15px;
     text-align: center;
 }
+
+.resultado {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resultado h2 {
+    margin-bottom: 10px;
+  }
+  
+  .resultado a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .resultado a:hover {
+    text-decoration: underline;
+  }
