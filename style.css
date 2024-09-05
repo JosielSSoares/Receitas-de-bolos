@@ -1,15 +1,14 @@
 
 /* Normalize.css ou Reset.css */
 /* @import url('https://unpkg.com/normalize.css'); */
-
+/* Estilos básicos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-weight: normal;
 }
-  
-/* Variáveis */
+
 :root {
   --font-family: Arial, sans-serif;
 }
@@ -34,7 +33,7 @@ h1 {
     font-family: "Sevillana", cursive;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
 
 body {
@@ -56,7 +55,7 @@ header h1 {
 }
 
 .search-bar {
-    width: 600px; /* Ajuste o tamanho conforme necessário */
+    width: 600px; 
     height: 40px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -66,12 +65,18 @@ header h1 {
 
 .pesquisar {
     padding: 10px 20px;
-    background-color: #4CAF50; /* Cor verde */
+    background-color: #9f4595; 
     color: white;
     border: none;
     height: 39px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.pesquisar:active {
+    background-color: #782f78;
+    transform: translateY(2px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 main {
@@ -85,4 +90,9 @@ footer {
     padding: 20px;
     text-align: center;
     margin-top: 200px;
+}
+
+.contato {
+    padding: 15px;
+    text-align: center;
 }
