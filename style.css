@@ -123,11 +123,13 @@ footer {
 }
 
 .resultado {
-    border: 1px solid #ccc;
+    border: 4px solid #9f435b;
     padding: 20px;
     margin: 10px;
     background-color: #f9f9f9;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-image: url('/./image/fundo-de-papel.jpg');
+    border-radius: 8px;
 }
   
 .resultado h2 {
@@ -141,4 +143,14 @@ footer {
   
 .resultado a:hover {
     text-decoration: underline;
+}
+
+.voltar {
+  padding: 5px 10px;
+  background-color: #9f4595; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
 }

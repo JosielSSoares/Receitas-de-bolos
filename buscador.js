@@ -1,21 +1,22 @@
 // buscador.js
-import {dados} from './dados.js'; // Importa o array de receitas
+import { dados } from './dados.js'; // Importa o array de receitas com informações sobre cada bolo
 
-const searchBar = document.querySelector('.search-bar');
-const searchButton = document.querySelector('.pesquisar');
-const main = document.querySelector('main');
+const searchBar = document.querySelector('.search-bar'); // Seleciona o elemento de entrada de texto para a busca
+const searchButton = document.querySelector('.pesquisar'); // Seleciona o botão para iniciar a busca
+const main = document.querySelector('main'); // Seleciona a seção principal onde os resultados serão exibidos
 
 function buscarReceitas(termoBusca) {
+  // Filtra as receitas que contenham o termo de busca no nome, descrição ou ingredientes
   const resultados = dados.filter(receita => {
-    const termoMin = termoBusca.toLowerCase();
-    return Object.values(receita).some(valor =>
-      typeof valor === 'string' && valor.toLowerCase().includes(termoMin)
-    );
+    const termoMin = termoBusca.toLowerCase(); // Converte o termo de busca para minúsculo para uma comparação mais precisa
+    return Object.values(receita) // Itera sobre os valores de cada objeto (receita)
+      .some(valor => typeof valor === 'string' && valor.toLowerCase().includes(termoMin)); // Verifica se algum valor é uma string e contém o termo de busca
   });
-debugger;
-  // Limpa os resultados anteriores
+
+  // Limpa a seção principal para exibir os novos resultados
   main.innerHTML = '';
 
+  // Cria um elemento div para cada resultado encontrado
   // Cria um elemento para cada resultado e adiciona ao main
   resultados.forEach(receita => {
     const resultadoElement = document.createElement('div');
@@ -26,12 +27,15 @@ debugger;
       <p>${receita.ingredientes}</p>
       <p>${receita.preparo}</p>
       <a href="${receita.link}" target="_blank">Ver receita completa</a>
+      <p ><button class="voltar" onclick="window.location.reload();">Voltar</button></p>
+
     `;
     main.appendChild(resultadoElement);
   });
 }
 
+// Adiciona um ouvinte de evento ao botão de busca
 searchButton.addEventListener('click', () => {
-  const termoBusca = searchBar.value;
-  buscarReceitas(termoBusca);
+  const termoBusca = searchBar.value; // Obtém o termo de busca digitado pelo usuário
+  buscarReceitas(termoBusca); // Chama a função de busca com o termo pesquisado
 });
