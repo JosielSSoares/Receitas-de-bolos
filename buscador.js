@@ -21,7 +21,7 @@ debugger;
     const resultadoElement = document.createElement('div');
     resultadoElement.classList.add('resultado');
     resultadoElement.innerHTML = `
-      <h2>${receita.nome}</h2>
+      <h4>${receita.nome}</h4>
       <p>${receita.descricao}</p>
       <p>${receita.ingredientes}</p>
       <p>${receita.preparo}</p>

@@ -1,7 +1,5 @@
 
-/* Normalize.css ou Reset.css */
-/* @import url('https://unpkg.com/normalize.css'); */
-/* Estilos básicos */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,26 +11,53 @@
   --font-family: Arial, sans-serif;
 }
 
-/* Estilos básicos */
 body {
   font-family: var(--font-family);
   color: var(--primary-color);
   line-height: 1.5;
 }
 
+p {
+  font-family: "Indie Flower", cursive;
+  font-size: 1.5rem;
+}
+
+li {
+  list-style-type: none;
+  font-family: "Indie Flower", cursive;
+  font-size: 1.5rem;
+}
+
 h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   margin-bottom: 1rem;
   font-family: "Sevillana", cursive;
   font-weight: 400;
   font-style: normal;
   margin-top: 150px;
 }
+h4 {
+  font-size: 2rem;
+  font-family: "Indie Flower", cursive;
+  font-style: normal;
+}
+
+h5 {
+  font-family: "Indie Flower", cursive;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
 
 .sevillana-regular {
     font-family: "Sevillana", cursive;
     font-weight: 400;
     font-style: normal;
+}
+
+.indie-flower-regular {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 
@@ -86,7 +111,7 @@ main {
 }
 
 footer {
-    /* background-color: #f0f0f0; */
+
     padding: 20px;
     text-align: center;
     margin-top: 200px;
@@ -103,17 +128,17 @@ footer {
     margin: 10px;
     background-color: #f9f9f9;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
+}
   
-  .resultado h2 {
+.resultado h2 {
     margin-bottom: 10px;
-  }
+}
   
-  .resultado a {
+.resultado a {
     color: #007bff;
     text-decoration: none;
-  }
+}
   
-  .resultado a:hover {
+.resultado a:hover {
     text-decoration: underline;
-  }
+}
