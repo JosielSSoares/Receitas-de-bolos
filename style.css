@@ -32,10 +32,21 @@ h1 {
   font-size: 6rem;
   margin-bottom: 1rem;
   font-family: "Sevillana", cursive;
+  color: #9f4595; 
   font-weight: 400;
   font-style: normal;
   margin-top: 150px;
+
+   /* Adicionando o contorno */
+   -webkit-text-stroke: 2px #333; /* Para navegadores baseados no WebKit (Chrome, Safari) */
+   text-shadow: 2px #333;
 }
+h3 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+
+}
+
 h4 {
   font-size: 2rem;
   font-family: "Indie Flower", cursive;
@@ -57,6 +68,13 @@ h5 {
 .indie-flower-regular {
   font-family: "Indie Flower", cursive;
   font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-slab {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 150;
   font-style: normal;
 }
 
@@ -115,6 +133,8 @@ footer {
     padding: 20px;
     text-align: center;
     margin-top: 200px;
+    background-color: #fbe0e0;
+    border-top: 1px solid #8d8282;
 }
 
 .contato {

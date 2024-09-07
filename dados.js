@@ -21,7 +21,7 @@ export const dados = [
   },
 
   {
-    nome: "Bolo de Cenoura com Cobertura",
+    nome: "Bolo de Cenoura com Cobertura de Chocolate",
     descricao: "Um bolo úmido e delicioso, perfeito para qualquer ocasião.",
     ingredientes: `<h5>Ingredientes:</h5>
       <ul>
@@ -66,7 +66,7 @@ export const dados = [
   },
 
   {
-    nome: "Bolo de Laranja com Glacê Real",
+    nome: "Bolo de Laranja",
     descricao: "Um bolo leve e aromático, perfeito para um chá da tarde.",
     ingredientes: `
       <h5>Ingredientes:</h5>
@@ -137,6 +137,112 @@ export const dados = [
     </ul>
     `,
     link: "https://www.tudosobrebolo.com.br/bolo-de-maca/", 
+  },
+
+  {
+    nome: "Bolo de Chocolate Vegano",
+    descricao: "Um bolo de chocolate úmido e saboroso, perfeito para quem segue uma dieta vegana.",
+    ingredientes: `<h5>Ingredientes:</h5>
+      <ul>
+        <li>1 xícara de açúcar de coco</li>
+        <li>1/2 xícara de óleo de coco</li>
+        <li>1 xícara de leite de coco</li>
+      </ul>`,
+    preparo: `
+      <ul><h5>Modo de Preparo:</h5>
+        <li>Misture os ingredientes secos em uma tigela. Em outra tigela, misture os ingredientes úmidos. Combine as duas misturas e asse em forno pré-aquecido a 180°C por aproximadamente 30 minutos.</li>
+      </ul>`,
+    link: "https://www.seuvoluntario.com.br/bolo-de-chocolate-vegano/",
+  },
+
+  {
+    nome: "Bolo de Banana",
+    descricao: "Um bolo nutritivo e saboroso, rico em fibras e proteínas.",
+    ingredientes: `<h5>Ingredientes:</h5>
+      <ul>
+        <li>3 Bananas maduras amassadas</li>
+        <li>1/2 xícara de sementes de chia</li>
+        <li>1 xícara de aveia em flocos</li>
+      </ul>`,
+    preparo: `
+      <ul><h5>Modo de Preparo:</h5>
+        <li>Misture todos os ingredientes em uma tigela e asse em forma untada e enfarinhada por aproximadamente 30 minutos.</li>
+      </ul>`,
+    link: "https://www.receitas.com.br/bolo-de-banana-com-chia-e-aveia/",
+  },
+
+  {
+    nome: "Bolo de Fubá",
+    descricao: "Um clássico bolo de fubá úmido e saboroso, perfeito para o café da manhã ou lanche.",
+    ingredientes: `<h5>Ingredientes:</h5>
+      <ul>
+        <li>2 xícaras (chá) de fubá</li>
+        <li>2 xícaras (chá) de açúcar</li>
+        <li>3 ovos</li>
+        <li>1 xícara (chá) de óleo</li>
+        <li>1 xícara (chá) de leite</li>
+        <li>1 colher de sopa de fermento em pó</li>
+      </ul>`,
+    preparo: `
+      <ul><h5>Modo de Preparo:</h5>
+        <li>Bata todos os ingredientes no liquidificador até obter uma massa homogênea.</li>
+        <li>Despeje a massa em uma forma untada e enfarinhada.</li>
+        <li>Asse em forno preaquecido a 180°C por aproximadamente 40 minutos.</li>   
+      </ul>`,
+    link: "https://www.tudogostoso.com.br/receita/21560-bolo-de-fuba-simples.html",
+  },
+
+  {
+    nome: "Bolo de Morango",
+    descricao: "Um bolo úmido e saboroso, perfeito para qualquer ocasião.",
+    ingredientes: `<h5>Ingredientes:</h5>
+      <ul>
+        <li>3 ovos</li>
+        <li>1 xícara (chá) de açúcar</li>
+        <li>1/2 xícara (chá) de óleo</li>
+        <li>2 xícaras (chá) de farinha de trigo</li>
+        <li>1 colher de sopa de fermento em pó</li>
+        <li>1 xícara (chá) de purê de morango</li>
+        <li>Morangos frescos para decorar</li>
+      </ul>`,
+    preparo: `
+      <ul><h5>Modo de Preparo:</h5>
+        <li>Bata os ovos com o açúcar até obter um creme claro e fofo.</li>
+        <li>Adicione o óleo e bata mais um pouco.</li>
+        <li>Peneire a farinha e o fermento e misture delicadamente à massa.</li>
+        <li>Adicione o purê de morango e misture com uma espátula.</li>
+        <li>Asse em forno preaquecido a 180°C por aproximadamente 30 minutos.</li>
+        <li>Decore com morangos frescos.</li>
+      </ul>`,
+    link: "https://www.tudogostoso.com.br/receita/28423-bolo-de-morango.html",
+  },
+
+  {
+    nome: "Bolo de Sorvete",
+    descricao: "Um bolo gelado e cremoso, perfeito para os dias quentes.",
+    ingredientes: `<h5>Ingredientes:</h5>
+      <ul>
+        <li>1 lata de leite condensado</li>
+        <li>2 latas de leite (use a lata do leite condensado para medir)</li>
+        <li>4 gemas peneiradas</li>
+        <li>4 claras batidas em neve</li>
+        <li>5 colheres (sopa) de açúcar</li>
+        <li>1 lata de creme de leite sem soro</li>
+        <li>Biscoitos de sua preferência (para a base)</li>
+        <li>Calda de chocolate ou caramelo (opcional)</li>
+      </ul>`,
+    preparo: `
+      <ul><h5>Modo de Preparo:</h5>
+        <li>Prepare uma base com biscoitos triturados e um pouco de manteiga derretida, pressionando-os no fundo de uma forma.</li>
+        <li>Bata as gemas com o leite condensado e o leite.</li>
+        <li>Bata as claras em neve com o açúcar.</li>
+        <li>Misture delicadamente as claras em neve à mistura das gemas.</li>
+        <li>Adicione o creme de leite e misture suavemente.</li>
+        <li>Despeje a mistura sobre a base de biscoitos.</li>
+        <li>Leve ao freezer por pelo menos 4 horas.</li>
+        <li>Desenforme e sirva com calda de chocolate ou caramelo.</li>
+      </ul>`,
+    link: "https://www.tudogostoso.com.br/receita/121136-bolo-de-sorvete.html",
   },
   
 ];
