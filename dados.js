@@ -94,7 +94,7 @@ export const dados = [
   },
 
   {
-    nome: "Bolo de Limão Siciliano",
+    nome: "Bolo de Limão",
     descricao: "Um bolo cítrico e refrescante, ideal para os dias quentes.",
     ingredientes: `
     <h5>Ingredientes:</h5>
@@ -168,7 +168,7 @@ export const dados = [
       <ul><h5>Modo de Preparo:</h5>
         <li>Misture todos os ingredientes em uma tigela e asse em forma untada e enfarinhada por aproximadamente 30 minutos.</li>
       </ul>`,
-    link: "https://www.receitas.com.br/bolo-de-banana-com-chia-e-aveia/",
+    link: "https://www.tudogostoso.com.br/receita/119737-bolo-de-banana-rapido-de-liquidificador.html",
   },
 
   {
