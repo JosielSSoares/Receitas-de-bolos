@@ -3,6 +3,7 @@ Projeto desenvolvido através da imersão Alura + Gemini
 
 ### Descrição
 Este projeto consiste em uma página web simples e intuitiva para pesquisa de receitas de bolos. O usuário pode digitar o nome do bolo desejado em uma barra de busca e obter resultados precisos.
+### Acesse através do link: https://josielssoares.github.io/Receitas-de-bolos/
 
 ### Tecnologias Utilizadas
 * **HTML:** Estrutura básica da página.
@@ -30,7 +31,7 @@ Este projeto consiste em uma página web simples e intuitiva para pesquisa de re
 * **Melhorar a interface do usuário:** Criar uma interface mais visualmente atraente e intuitiva.
 * **Implementar um sistema de favoritos:** Permitir que os usuários marquem suas receitas favoritas.
 
-### Contribuiçõe
+### Contribuições
 Contribuições são bem-vindas! Se você encontrar algum bug ou tiver alguma sugestão, por favor, abra um issue ou faça um pull request.
 
 ### Como buscar?
