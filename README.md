@@ -3,6 +3,7 @@ Projeto desenvolvido através da imersão Alura + Gemini
 
 ### Descrição
 Este projeto consiste em uma página web simples e intuitiva para pesquisa de receitas de bolos. O usuário pode digitar o nome do bolo desejado em uma barra de busca e obter resultados precisos.
+### Acesse através do link: https://receitas-de-bolos-eta.vercel.app/
 
 ### Tecnologias Utilizadas
 * **HTML:** Estrutura básica da página.
