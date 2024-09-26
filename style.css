@@ -51,6 +51,11 @@ header h1 {
   margin-bottom: 10px;
 }
 
+@media (max-width: 576px) { /* Ou outro breakpoint que você achar adequado */
+  h1 {
+    font-size: 3rem; /* Ou outro valor que se adapte melhor */
+  }
+}
 
 h1 {
   font-size: 6rem;
