@@ -116,29 +116,29 @@ h5 {
 
 
 .container #principal .row .search-bar {
-  width: 600px; 
-  height: 40px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  margin-right:3px;
+  width: 600px !important; 
+  height: 40px !important;
+  border: 1px solid #ccc !important;
+  border-radius: 5px !important;
+  padding: 10px !important;
+  margin-right:3px !important;
 }
 
 .container #principal .row .pesquisar {
-  padding: 10px 20px;
-  background-color: #9f4595; 
-  color: white;
-  border: none;
-  height: 39px;
-  border-radius: 5px;
-  cursor: pointer;
+  padding: 10px 20px !important;
+  background-color: #9f4595 !important; 
+  color: white !important;
+  border: none !important;
+  height: 39px !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
 }
 
 
 .container #principal .row .pesquisar:active {
-  background-color: #782f78;
-  transform: translateY(2px);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #782f78 !important;
+  transform: translateY(2px) !important;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2) !important;
 }
 
 /* .main {
