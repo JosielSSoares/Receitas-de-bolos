@@ -1,22 +1,22 @@
 // buscador.js
-import { dados } from './dados.js'; // Importa o array de receitas com informações sobre cada bolo
+import { dados } from './dados.js'; // Importa o array de receitas com informações sobre cada bolo do aquivo 'dados.js'
 
-const searchBar = document.querySelector('.search-bar'); // Seleciona o elemento de entrada de texto para a busca
-const searchButton = document.querySelector('.pesquisar'); // Seleciona o botão para iniciar a busca
-const main = document.querySelector('main'); // Seleciona a seção principal onde os resultados serão exibidos
+const campodeBusca = document.getElementById("campo-de-busca") 
+const botaoPesquisar = document.getElementById("pesquisar") 
+const principal = document.getElementById("principal"); // Seleciona a seção principal onde os resultados serão exibidos
 
 function buscarReceitas(termoBusca) {
-  // Filtra as receitas que tenham o nome exatamente igual ao termo de busca
+  // Filtra as receitas que tenham o nome exatamente igual ao termo de busca, em processo de aprimoramento
   const resultados = dados.filter(receita => {
     const termoMin = termoBusca.toLowerCase();
     return receita.nome.toLowerCase() === termoMin;
   });
 
   // Limpa a seção principal para exibir os novos resultados
-  main.innerHTML = '';
+  principal.innerHTML = '';
 
   if (resultados.length === 0) {
-    main.innerHTML = '<button class="voltar" onclick="window.location.reload();">Ops!Bolo não encontado.</button>';
+    principal.innerHTML = '<button class="voltar" onclick="window.location.reload();">Ops!Bolo não encontado.</button>';
   } else {
     // Cria um elemento div para cada resultado encontrado
     resultados.forEach(receita => {
@@ -31,13 +31,13 @@ function buscarReceitas(termoBusca) {
         <p ><button class="voltar" onclick="window.location.reload();">Voltar</button></p>
   
       `;
-      main.appendChild(resultadoElement);
+      principal.appendChild(resultadoElement);
     });
   }
 }
 
-// Adiciona um ouvinte de evento ao botão de busca
-searchButton.addEventListener('click', () => {
-  const termoBusca = searchBar.value; // Obtém o termo de busca digitado pelo usuário
+// Adiciona uma chamada da fundão pesquisar quando o botão é clicado
+botaoPesquisar.addEventListener('click', () => {
+  const termoBusca = campodeBusca.value; // Obtém o termo de busca digitado pelo usuário
   buscarReceitas(termoBusca); // Chama a função de busca com o termo pesquisado
 });
