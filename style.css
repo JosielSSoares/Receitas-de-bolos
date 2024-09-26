@@ -7,26 +7,50 @@
     font-weight: normal;
 }
 
+
 :root {
   --font-family: Arial, sans-serif;
 }
+
 
 body {
   font-family: var(--font-family);
   color: var(--primary-color);
   line-height: 1.5;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background-image: url('/./image/composicao-de-padaria-plana-redimencionada.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
+
 
 p {
   font-family: "Indie Flower", cursive;
   font-size: 1.5rem;
 }
 
+
 li {
   list-style-type: none;
   font-family: "Indie Flower", cursive;
   font-size: 1.5rem;
 }
+
+
+header {
+  padding: 20px;
+  text-align: center;
+}
+
+
+header h1 {
+  margin-bottom: 10px;
+}
+
 
 h1 {
   font-size: 6rem;
@@ -41,11 +65,14 @@ h1 {
    -webkit-text-stroke: 2px #333; /* Para navegadores baseados no WebKit (Chrome, Safari) */
    text-shadow: 2px #333;
 }
+
+
 h3 {
   font-family: "Roboto Slab", serif;
   font-weight: 300;
 
 }
+
 
 h4 {
   font-size: 2rem;
@@ -53,11 +80,18 @@ h4 {
   font-style: normal;
 }
 
+
 h5 {
   font-family: "Indie Flower", cursive;
   font-size: 1.5rem;
   text-decoration: underline;
 }
+
+
+.container {
+  flex: 1; 
+}
+
 
 .sevillana-regular {
     font-family: "Sevillana", cursive;
@@ -65,11 +99,13 @@ h5 {
     font-style: normal;
 }
 
+
 .indie-flower-regular {
   font-family: "Indie Flower", cursive;
   font-weight: 400;
   font-style: normal;
 }
+
 
 .roboto-slab {
   font-family: "Roboto Slab", serif;
@@ -79,57 +115,39 @@ h5 {
 }
 
 
-body {
-    font-family: Arial, sans-serif;
-    background-image: url('/./image/composicao-de-padaria-plana-redimencionada.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.container #principal .row .search-bar {
+  width: 600px; 
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right:3px;
 }
 
-header {
-    /* background-color: #f0f0f0; */
-    padding: 20px;
-    text-align: center;
+.container #principal .row .pesquisar {
+  padding: 10px 20px;
+  background-color: #9f4595; 
+  color: white;
+  border: none;
+  height: 39px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-header h1 {
-    margin-bottom: 10px;
+
+.container #principal .row .pesquisar:active {
+  background-color: #782f78;
+  transform: translateY(2px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.search-bar {
-    width: 600px; 
-    height: 40px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin-right:3px;
-}
-
-.pesquisar {
-    padding: 10px 20px;
-    background-color: #9f4595; 
-    color: white;
-    border: none;
-    height: 39px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.pesquisar:active {
-    background-color: #782f78;
-    transform: translateY(2px);
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-main {
+/* .main {
     padding: 20px;
     display: flex;
     justify-content: center;
-}
+} */
 
-footer {
-
+.roda-pe {
     padding: 20px;
     text-align: center;
     margin-top: 200px;
