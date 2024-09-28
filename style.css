@@ -137,11 +137,11 @@ h5 {
 
 @media (max-width: 576px) { 
   h1 {
-      font-size: 1.5rem; /* Ajuste conforme necessário */
+      font-size: 3.5rem;
   }
   
   #principal .row .pesquisar {
-      margin-left: 0; /* Remove margens negativas */
+      margin-left: 0; 
       width: 100%; /* Faz o botão ocupar 100% da largura disponível */
   }
 }
@@ -154,7 +154,7 @@ h5 {
   height: 39px ;
   border-radius: 5px ;
   cursor: pointer;
-  margin-left: -15px;
+  
 }
 
 
