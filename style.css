@@ -14,17 +14,19 @@
 
 
 body {
-  font-family: var(--font-family);
-  color: var(--primary-color);
-  line-height: 1.5;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  font-family: Arial, sans-serif;
   background-image: url('/./image/composicao-de-padaria-plana-redimencionada.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; /* Faz a imagem cobrir toda a área */
   background-position: center;
+  height: 100vh; /* Garante que o corpo ocupe 100% da altura da tela */
+}
+
+/* Adicionando uma regra específica para telas menores */
+@media (max-width: 576px) {
+  body {
+      background-size: cover; /* Garante que continue cobrindo a tela */
+      height: auto; /* Permite que a altura se ajuste conforme o conteúdo */
+  }
 }
 
 
@@ -47,13 +49,14 @@ header {
 }
 
 
-header h1 {
-  margin-bottom: 10px;
+h1 {
+  /* ... outros estilos ... */
+  font-size: 2.5rem; /* Tamanho base */
 }
 
-@media (max-width: 576px) { /* Ou outro breakpoint que você achar adequado */
+@media (max-width: 576px) { 
   h1 {
-    font-size: 3rem; /* Ou outro valor que se adapte melhor */
+      font-size: 2rem; /* Tamanho menor para telas pequenas */
   }
 }
 
@@ -65,8 +68,6 @@ h1 {
   font-weight: 400;
   font-style: normal;
   margin-top: 150px;
-
-   /* Adicionando o contorno */
    -webkit-text-stroke: 2px #333; /* Para navegadores baseados no WebKit (Chrome, Safari) */
    text-shadow: 2px #333;
 }
@@ -122,13 +123,27 @@ h5 {
 
 
 #principal .row .search-bar {
-  width: 600px ; 
+  width: 100%; 
+  max-width: 600px;
   height: 40px ;
   border: 1px solid #ccc ;
   border-radius: 5px;
   padding: 10px ;
   margin-right:3px;
+  
 
+}
+
+
+@media (max-width: 576px) { 
+  h1 {
+      font-size: 1.5rem; /* Ajuste conforme necessário */
+  }
+  
+  #principal .row .pesquisar {
+      margin-left: 0; /* Remove margens negativas */
+      width: 100%; /* Faz o botão ocupar 100% da largura disponível */
+  }
 }
 
 #principal .row .pesquisar {
@@ -150,9 +165,16 @@ h5 {
 }
 
 .principal {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 65px; /* Adiciona espaço no topo para evitar que o conteúdo fique colado no título */
+}
+
+@media (max-width: 576px) { 
+  .principal {
+      padding-top: 35px; /* Ajusta o padding para telas pequenas */
+  }
 }
 
 .roda-pe {
