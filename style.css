@@ -7,7 +7,6 @@
     font-weight: normal;
 }
 
-
 :root {
   --font-family: Arial, sans-serif;
 }
@@ -122,6 +121,18 @@ h5 {
 }
 
 
+input[type="text"] {
+  min-width: 450px; /* O campo terá no mínimo 200 pixels de comprimento */
+}
+
+
+
+
+row {
+
+
+}
+
 #principal .row .search-bar {
   width: 100%; 
   max-width: 600px;
@@ -133,7 +144,6 @@ h5 {
   
 
 }
-
 
 @media (max-width: 576px) { 
   h1 {
@@ -147,7 +157,7 @@ h5 {
 }
 
 #principal .row .pesquisar {
-  padding: 10px 20px;
+  padding: 4px 15px;
   background-color: #9f4595 ; 
   color: white ;
   border: none ;
