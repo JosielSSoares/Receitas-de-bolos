@@ -13,21 +13,14 @@
 
 
 body {
+  position: relative;
   background-image: url('/./image/composicao-de-padaria-plana-redimencionada.jpg');
   background-repeat: no-repeat;
   background-size: cover; /* Faz a imagem cobrir toda a área */
   background-position: center;
-  height: 100vh; /* Garante que o corpo ocupe 100% da altura da tela */
+  min-height: 100vh; /* Garante que o corpo ocupe no mínimo 100% da altura da tela */
+  padding-bottom: 100px; /* padding de 100px para o rodape */
 }
-
-/* Adicionando uma regra específica para telas menores */
-@media (max-width: 576px) {
-  body {
-      background-size: cover; /* Garante que continue cobrindo a tela */
-      height: auto; /* Permite que a altura se ajuste conforme o conteúdo */
-  }
-}
-
 
 p {
   font-family: "Indie Flower", cursive;
@@ -120,22 +113,17 @@ h5 {
   font-style: normal;
 }
 
-
-input[type="text"] {
-  min-width: 450px; /* O campo terá no mínimo 200 pixels de comprimento */
+#principal {
+  display: flex;
+  justify-content: center;
 }
 
-
-
-
-row {
-
-
+#principal .input-group {
+  width: 600px;
+  max-width: 100%;
 }
 
-#principal .row .search-bar {
-  width: 100%; 
-  max-width: 600px;
+#principal .search-bar {
   height: 40px ;
   border: 1px solid #ccc ;
   border-radius: 5px;
@@ -150,13 +138,13 @@ row {
       font-size: 3.5rem;
   }
   
-  #principal .row .pesquisar {
+  #principal .pesquisar {
       margin-left: 0; 
       width: 100%; /* Faz o botão ocupar 100% da largura disponível */
   }
 }
 
-#principal .row .pesquisar {
+#principal .pesquisar {
   padding: 4px 15px;
   background-color: #9f4595 ; 
   color: white ;
@@ -168,7 +156,7 @@ row {
 }
 
 
-#principal .row .pesquisar:active {
+#principal .pesquisar:active {
   background-color: #782f78 ;
   transform: translateY(2px);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
@@ -176,8 +164,6 @@ row {
 
 .principal {
   padding: 20px;
-  display: flex;
-  justify-content: center;
   padding-top: 65px; /* Adiciona espaço no topo para evitar que o conteúdo fique colado no título */
 }
 
@@ -188,11 +174,20 @@ row {
 }
 
 .roda-pe {
+    /* Mante o rodape fixo embaixo com altura fixa de 100px */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    bottom: 0;
     padding: 20px;
     text-align: center;
-    margin-top: 200px;
     background-color: #fbe0e0;
     border-top: 1px solid #8d8282;
+    height: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contato {
