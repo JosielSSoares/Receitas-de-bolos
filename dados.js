@@ -1,5 +1,5 @@
 export const dados = [
-  // ... suas receitas anteriores
+  // Minhas receitas
   {
     nome: "Bolo de Chocolate",
     descricao: "Um clássico bolo de chocolate úmido e saboroso.",
@@ -21,7 +21,7 @@ export const dados = [
   },
 
   {
-    nome: "Bolo de Cenoura com Cobertura de Chocolate",
+    nome: "Bolo de Cenoura",
     descricao: "Um bolo úmido e delicioso, perfeito para qualquer ocasião.",
     ingredientes: `<h5>Ingredientes:</h5>
       <ul>
@@ -160,14 +160,29 @@ export const dados = [
     descricao: "Um bolo nutritivo e saboroso, rico em fibras e proteínas.",
     ingredientes: `<h5>Ingredientes:</h5>
       <ul>
-        <li>3 Bananas maduras amassadas</li>
-        <li>1/2 xícara de sementes de chia</li>
-        <li>1 xícara de aveia em flocos</li>
+        <li>3 ovos</li>
+        <li>1 xícara (chá) de leite</li>
+        <li>2 xícaras (chá) de farinha de trigo</li>
+        <li>7 bananas</li>
+        <li>2 xícaras (chá) de açúcar</li>
+        <li>1/2 xícara (chá) de óleo</li>
+        <li>1 colher (sopa) de fermento químico</li>
+        <h5>Cobertura:</h5>
+        <li>3/4 xícara (chá) de açúcar</li>
+        <li>3/4 xícara (chá) de açúcar</li>
       </ul>`,
     preparo: `
-      <ul><h5>Modo de Preparo:</h5>
-        <li>Misture todos os ingredientes em uma tigela e asse em forma untada e enfarinhada por aproximadamente 30 minutos.</li>
-      </ul>`,
+  <ul><h5>Modo de Preparo:</h5>
+    <li>Cobertura: Em uma panela, adicione o açúcar e misture até derreter.</li>
+    <li>Despeje a água quente e mexa até dissolver o açúcar.</li>
+    <li>Deixe engrossar até chegar ao ponto de calda e reserve.</li> 
+    <li>Massa: Bata no liquidificador os ovos, o açúcar, o óleo e o leite.</li>
+    <li>Acrescente a farinha de trigo aos poucos e continue batendo até obter uma massa lisa e homogênea.</li>
+    <li>Adicione por último o fermento e bata na velocidade mínima do liquidificador.</li>
+    <li>Unte uma forma média com margarina e farinha.</li>
+    <li>Despeje o caramelo e as bananas cortadas no comprimento.</li>
+    <li>Leve para assar em forno médio 180º C, preaquecido por aproximadamente 30 minutos.</li>
+  </ul>`,
     link: "https://www.tudogostoso.com.br/receita/119737-bolo-de-banana-rapido-de-liquidificador.html",
   },
 

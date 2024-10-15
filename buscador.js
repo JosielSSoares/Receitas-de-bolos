@@ -13,7 +13,6 @@ function buscarReceitas(termoBusca) {
     // Remove espaços em branco do início e do fim do nome da receita
     const nomeReceita = receita.nome.trim().toLowerCase(); 
 
-    // Compara o termo de busca com o nome da receita
     return nomeReceita === termoMinimo; 
   });
 
@@ -34,7 +33,6 @@ function buscarReceitas(termoBusca) {
         <p>${receita.preparo}</p>
         <a href="${receita.link}" target="_blank">Ver receita completa</a>
         <p ><button class="voltar" onclick="window.location.reload();">Voltar</button></p>
-  
       `;
       principal.appendChild(resultadoElement);
     });
@@ -43,11 +41,11 @@ function buscarReceitas(termoBusca) {
 
 // Adiciona uma chamada da fundão pesquisar quando o botão é clicado
 botaoPesquisar.addEventListener('click', () => {
-  const termoBusca = campodeBusca.value; // Obtém o termo de busca digitado pelo usuário
-  buscarReceitas(termoBusca); // Chama a função de busca com o termo pesquisado
+  const termoBusca = campodeBusca.value;
+  buscarReceitas(termoBusca);
 });
 
-// Adiciona um ouvinte de evento para a tecla Enter no campo de busca
+// Adiciona um ouvinte de evento para a tecla Enter 
 campodeBusca.addEventListener('keypress', (event) => {
   if (event.key === "Enter") {  // Verifica se a tecla pressionada foi Enter
     const termoBusca = campodeBusca.value;
