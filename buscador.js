@@ -39,16 +39,15 @@ function buscarReceitas(termoBusca) {
   }
 }
 
-// Adiciona uma chamada da fundão pesquisar quando o botão é clicado
-botaoPesquisar.addEventListener('click', () => {
+function realizarBusca() {
   const termoBusca = campodeBusca.value;
   buscarReceitas(termoBusca);
-});
+}
 
-// Adiciona um ouvinte de evento para a tecla Enter 
+// Adiciona um ouvinte de evento para ambos os eventos 'click' e 'keypress'
+botaoPesquisar.addEventListener('click', realizarBusca);
 campodeBusca.addEventListener('keypress', (event) => {
-  if (event.key === "Enter") {  // Verifica se a tecla pressionada foi Enter
-    const termoBusca = campodeBusca.value;
-    buscarReceitas(termoBusca);
+  if (event.key === "Enter") {
+    realizarBusca();
   }
 });
