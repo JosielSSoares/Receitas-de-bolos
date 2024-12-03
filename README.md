@@ -1,9 +1,12 @@
 ## Projeto: Receitas de Bolos
-Projeto desenvolvido através da imersão Alura + Gemini
+Projeto desenvolvido através da imersão Alura + Gemini, porém em continuidade para conhecimento pessoal.
 
 ### Descrição
 Este projeto consiste em uma página web simples e intuitiva para pesquisa de receitas de bolos. O usuário pode digitar o nome do bolo desejado em uma barra de busca e obter resultados precisos.
 ### Acesse através do link: https://receitas-de-bolos-eta.vercel.app/
+
+### Como buscar?
+Digite a palavra "Bolo" seguido do sabor, exemplo: Bolo de Chocolate, Bolo de fubá, etc.
 
 ### Tecnologias Utilizadas
 * **HTML:** Estrutura básica da página.
@@ -20,6 +23,10 @@ Este projeto consiste em uma página web simples e intuitiva para pesquisa de re
 * **buscador.js:** Arquivo JavaScript que contém a lógica da busca.
 * **dados.js:** Arquivo JavaScript que armazena as informações das receitas.
 
+### Melhorias Implementadas
+* **Melhorar a interface do usuário:** Utilizado Bootstrap 5 para se adaptar a maioria dos dispositivos móveis.
+* **Adicionar mais receitas:** Adicionado mais receitas de bolos.
+
 ### Como Utilizar
 1. **Clonar o repositório:** Use o comando `git clone https://github.com/seu_usuario/seu_repositorio.git` para clonar o projeto para o seu computador.
 2. **Abrir os arquivos:** Abra os arquivos `index.html`, `style.css` `dados.js` `buscador.js` e pasta `image` em um editor de código.
@@ -28,7 +35,6 @@ Este projeto consiste em uma página web simples e intuitiva para pesquisa de re
 ### Próximos Passos
 * **Aprimorar a busca:** Implementar uma busca mais robusta, permitindo a pesquisa por ingredientes ou categorias.
 * **Adicionar mais receitas:** Expandir a base de dados de receitas.
-* **Melhorar a interface do usuário:** Criar uma interface mais visualmente atraente e intuitiva.
 * **Implementar um sistema de favoritos:** Permitir que os usuários marquem suas receitas favoritas.
 
 ### Contribuições
