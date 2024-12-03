@@ -49,6 +49,7 @@ h1 {
 @media (max-width: 576px) { 
   h1 {
       font-size: 2rem; /* Tamanho menor para telas pequenas */
+
   }
 }
 
@@ -134,10 +135,7 @@ h5 {
 }
 
 @media (max-width: 576px) { 
-  h1 {
-      font-size: 3.5rem;
-  }
-  
+
   #principal .pesquisar {
       margin-left: 0; 
       width: 100%; /* Faz o botão ocupar 100% da largura disponível */
@@ -178,8 +176,6 @@ h5 {
     position: absolute;
     bottom: 0;
     right: 0;
-    bottom: 0;
-    padding: 20px;
     text-align: center;
     background-color: #fbe0e0;
     border-top: 1px solid #8d8282;
